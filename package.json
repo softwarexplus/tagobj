@@ -1,0 +1,37 @@
+{
+    "name": "tagobj",
+    "version": "0.0.1",
+    "description": "A simple package",
+    "author": "SoftwareX Plus",
+    "homepage": "https://github.com/softwarexplus/tagobj#readme",
+    "type": "commonjs",
+    "main": "out/index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "(node --eval \"require('node:fs').rmSync('out', { recursive: true, force: true })\" || true) && tsc",
+        "dev": "tsc --watch",
+        "lint": "prettier --config=.prettierrc --write src/",
+        "lint-test": "prettier --config=.prettierrc --check src/",
+        "test": "tsc --noEmit"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/softwarexplus/tagobj"
+    },
+    "bugs": {
+        "url": "https://github.com/softwarexplus/tagobj/issues"
+    },
+    "funding": {
+        "type": "patreon",
+        "url": "https://www.patreon.com/softwarexplus"
+    },
+    "publishConfig": {
+        "access": "public",
+        "tag": "latest"
+    },
+    "devDependencies": {
+        "@types/node": "^22.4.0",
+        "prettier": "^3.3.3",
+        "typescript": "^5.5.4"
+    }
+}
